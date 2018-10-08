@@ -9,7 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.squareup.picasso.Picasso
 
-class MainRecyclerAdapter(val listener: OnMainItemClickListener) : RecyclerView.Adapter<MainRecyclerAdapter.ViewHolder>() {
+class MainRecyclerAdapter(private val listener: OnMainItemClickListener) : RecyclerView.Adapter<MainRecyclerAdapter.ViewHolder>() {
 
     val items = ArrayList<Item>()
 
